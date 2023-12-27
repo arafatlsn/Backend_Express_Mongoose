@@ -1,20 +1,11 @@
 {
-<<<<<<< HEAD
-  "name": "backend",
+  "name": "mern_mongodb",
   "version": "1.0.0",
   "main": "src/index.js",
   "license": "MIT",
   "type": "module",
   "scripts": {
-    "start": "nodemon src/index"
-=======
-  "name": "Backend_Development",
-  "version": "1.0.0",
-  "main": "index.js",
-  "license": "MIT",
-  "scripts": {
-    "start": "nodemon index"
->>>>>>> 7657eefa746a36329b8b9b3289ba2a40fcb78e32
+    "start": "nodemon src/index.js"
   },
   "dependencies": {
     "cors": "^2.8.5",
