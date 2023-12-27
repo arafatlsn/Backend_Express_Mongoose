@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "name": "backend",
   "version": "1.0.0",
   "main": "src/index.js",
@@ -6,6 +7,14 @@
   "type": "module",
   "scripts": {
     "start": "nodemon src/index"
+=======
+  "name": "Backend_Development",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "nodemon index"
+>>>>>>> 7657eefa746a36329b8b9b3289ba2a40fcb78e32
   },
   "dependencies": {
     "cors": "^2.8.5",
