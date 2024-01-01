@@ -1,5 +1,4 @@
 import { configDotenv } from "dotenv";
-// dotenv config 
 configDotenv();
 import { app } from "./app.js";
 import { dbFunc } from "./db/index.js";

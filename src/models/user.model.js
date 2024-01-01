@@ -16,32 +16,35 @@ const userSchema = new mongoose.Schema(
       type: String,
       required: true,
       unique: true,
+      trim: true,
     },
     email: {
       type: String,
       required: true,
       unique: true,
+      trim: true,
+    },
+    password: {
+      type: String,
+      required: true,
     },
     fullName: {
       type: String,
       required: true,
     },
-    avatar: String,
+    avatar: { type: String, required: true },
     coverImage: String,
-    password: {
-      type: String,
-      required: true,
-    },
     refreshToken: String,
   },
   { timestamps: true }
 );
 
 userSchema.pre("save", async function (next) {
+  console.log("hello world");
   if (!this.isModified("password")) {
     next();
   }
-  this.password = await bcrypt.hash(password, 10);
+  this.password = await bcrypt.hash(this.password, 10);
   next();
 });
 // mongoose custom methods f
