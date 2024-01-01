@@ -1,9 +1,8 @@
 import { configDotenv } from "dotenv";
+// dotenv config 
 configDotenv();
-import express from "express";
-const app = express();
+import { app } from "./app.js";
 import { dbFunc } from "./db/index.js";
-
 
 const port = process.env.PORT || 3001;
 app.listen(port, () => {
